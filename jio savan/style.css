@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    /* border:1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid rgb(54, 54, 53); */
+    margin: 0px 10px;
+}
+
+.left ul{
+    width: 65%;
+    margin-left: 30px;
+}
+
+ul li,.language{
+    list-style-type: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 2px;
+    border-bottom: 2px solid #f6f6f6;
+    /* border: 1px solid brown; */
+    transition: border-bottom 0.5s ;
+}
+
+ul li:hover,.language:hover{
+    border-bottom: 2px solid black;
+}
+
+.language{
+    display: none;
+}
+
+.left img{
+width: 40px;
+margin-left: 5%;
+}
+
+nav input{
+    width: 25%;
+    padding: 7px 20px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+nav input::placeholder{
+    font-family: FontAwesome;
+    text-transform:lowercase;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.4;
+}
+.logo_heading{
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.logo_cnt{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.right{
+    margin-right: 30px;
+    /* border: 1px solid red; */
+}
+
+
+main{
+    width: 100vw;
+    display: flex;
+
+}
+.sidebar{
+    width: 16%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.library{
+    margin-left: 15%;
+    padding: 10px 0;
+    font-weight: 600;
+    opacity: .7;
+    font-size: .9rem;
+}
+
+.library_item{
+    margin-left: 25%;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: .9rem;
+    /* cursor: pointer; */
+}
+.library_item span{
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.library_item i{
+    color: rgb(92, 92, 92);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn button{
+    padding: 8px 15px;
+    background-color: none;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 1px solid #2bc5b4;
+    background-color: #f6f6f6;
+    color: #2bc5b4;
+    cursor: pointer;
+}
+
+.btn button:hover{
+   border-color: #1d8276;
+    color: #1d8276;
+}
+
+.songSection{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 3%;
+
+}
+
+.hi{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.song_row{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* flex-shrink:initial ; */
+    /* border: 2px solid firebrick; */
+}
+.playlist{
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+
+}
+
+.playlist img{
+    width: 90%;
+    cursor: pointer ;
+    border-radius: 4px;
+}
+
+.playlist img:hover{
+    color: black;
+}
+
+.title{
+    padding: 5px 0;
+    font-weight: 600;
+    font-size: .9rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.para{
+    text-align: center;
+    color: gray;
+}
+
+.playlistTitle{
+    color: gray;
+    margin-top: 30px;
+}
+footer{
+    position: sticky;
+    background-color: rgb(219, 143, 43);
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer i{
+    font-size: 18px;
+}
+
+
+.box div{
+    padding:3px 10px 0 0;
+}
+
+
+@media only screen and (max-width: 971px) {
+    nav ul{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        justify-content: center;
+    }
+    .language {
+        display: inline;
+        position: absolute;
+        right:5%;
+    }
+    
+    .sidebar{
+        display: none;
+    }
+    .songSection{
+        width: 100vw;
+    }
+    
+}

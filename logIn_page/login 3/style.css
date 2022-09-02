@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(210,217,154,1) 3%, rgba(139,129,125,1) 67%);
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cnt{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    height: 50vh;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox{
+    margin: 30px;
+    width: 60%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vw;
+    height: 10vw;
+}
+
+.inputbox label{
+    display: inline-block;
+    padding: 3px 5px;
+    /* width: 60px; */
+    transform: translateY(30px);
+    background-color: white;
+    /* border:2px solid rgb(231, 19, 19); */
+    font-size: 1vw;
+    /* opacity: 0.5; */
+    color: rgb(139, 133, 133);
+    z-index: 1;
+}
+
+#pass-label{
+    /* padding: 0px 10px; */
+    width: 80px;
+}
+
+input:focus,input:valid{
+    transform: translateY(-10px);
+}
+
+input{
+    height: 2.3vw;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input[type = button]{
+    font-size: 1.2vw;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: #1f2f82;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap');
+    </style>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body{
+            background-color: yellow;
+        }
+
+        .wrapper{
+            display: flex;
+            /* height: 100vh; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-time{
+            font-size: 3rem;
+            margin:50px 0 20px 0;
+        }
+
+        .btn-cnt{
+            display: flex;
+        }
+
+        button{
+            margin: 0 10px 0 10px;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+            cursor: pointer;
+            transition: 150ms linear;
+            border: 3px solid white;
+            background-color: yellow;
+        }
+
+        button:hover{
+            background-color: rgb(219, 219, 219);
+        }
+
+        #item{
+            margin-top: 40px;
+            font-size: 1.3rem;
+        }
+
+    </style>
+
+
+    
+</head>
+<body onload="fun()">
+
+    <div class="wrapper" >
+        <h1>STOP WATCH</h1>
+        <P class="main-time"><span id="seconds">00</span> : <span id="tens">00</span></P>
+        <div class="btn-cnt">
+            <button id="start-button">Start</button>
+            <button id="stop-button">Stop</button>
+            <button id="reset-button">Reset</button>
+        </div>
+        <div id="item">
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        
+        
+        function fun() {
+      
+      
+      var seconds = 00; 
+      var tens = 00; 
+      var appendTens = document.getElementById("tens")
+      var appendSeconds = document.getElementById("seconds")
+      var buttonStart = document.getElementById('start-button');
+      var buttonStop = document.getElementById('stop-button');
+      var buttonReset = document.getElementById('reset-button');
+      var Interval ;
+    
+      buttonStart.onclick = function() {
+        
+         clearInterval(Interval);
+         Interval = setInterval(startTimer, 10);
+      }
+      
+        buttonStop.onclick = function() { 
+           clearInterval(Interval);
+           document.getElementById("item").innerHTML += `${seconds>10?seconds: '0'+seconds } : ${tens>10 ? tens : '0'+tens} <br>`;
+
+      }
+      
+    
+      buttonReset.onclick = function() {
+         clearInterval(Interval);
+        tens = "00";
+        seconds = "00";
+        appendTens.innerHTML = tens;
+        appendSeconds.innerHTML = seconds;
+
+        document.getElementById("item").innerHTML = ``;
+      }
+      
+       
+      
+      function startTimer () {
+        tens++; 
+        
+        if(tens <= 9){
+          appendTens.innerHTML = "0" + tens;
+        }
+        
+        if (tens > 9){
+          appendTens.innerHTML = tens;
+          
+        } 
+        
+        if (tens > 99) {
+          seconds++;
+          appendSeconds.innerHTML = "0" + seconds;
+          tens = 0;
+          appendTens.innerHTML = "0" + 0;
+        }
+        
+        if (seconds > 9){
+          appendSeconds.innerHTML = seconds;
+        }
+      
+      }
+      
+    
+    }
+    </script>
+</body>
+
+</html>

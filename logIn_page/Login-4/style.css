@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300,600,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.cnt {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 80vh; */
+    width: 70vw;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 89px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.signin {
+    width: 65%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.companyname {
+    position: absolute;
+    left: 14px;
+    /* top: 10px; */
+    font-size: 1.1rem;
+    margin-top: 21px;
+    font-weight: 600;
+}
+
+.company {
+    color: rgb(29, 228, 119);
+}
+
+.head {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgb(29, 228, 119);
+    margin-top: 80px;
+
+
+}
+
+#line {
+    background-color: rgb(29, 228, 119);
+    height: 3px;
+}
+
+.socialmedia {
+    margin-top: 30px;
+}
+
+.text {
+    opacity: 0.7;
+}
+
+.email,.password{
+    width: 42%;
+}
+#email,
+#password {
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    border-style: none;
+    border-radius: 4px;
+    border: 2px solid grey;
+    padding: 17px 11px;
+    outline: none;
+
+    /* border:2px solid red */
+}
+
+#email:focus, #password:focus{
+    border: 2px solid rgb(29, 228, 119);
+}
+
+/* input:focus {
+    border-color: rgb(29, 228, 119);
+    border-style: none;
+} */
+
+.signup {
+    background-color: rgb(29, 228, 119);
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* border-radius: 5px; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+.heading {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.underline {
+    height: 2px;
+    width: 50px;
+    font-weight: 600;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.text {
+    width: 220px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: 600;
+    border-style: none;
+    font-size: 1em;
+}
+
+.question {
+    display: flex;
+    margin: 20px 8px;
+    cursor: pointer;
+    width: 42%;
+    /* padding: 2px 0px; */
+}
+
+.checkbox {
+    margin-right: 40px;
+}
+
+#forgot {
+    margin-left: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#signup button {
+    background-color: rgb(29, 228, 119);
+    border: 1px solid white;
+    margin-top: 40px;
+    color: white;
+    font-size: 1em;
+}
+
+
+#signup button:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: #1de477;
+}
+#signin button {
+    background-color: #1de477;
+    /* border: 1px solid white; */
+    margin-top: 8px;
+    color: white;
+    margin-bottom: 26px;
+    font-size: 1em;
+}
+
+
+a {
+    text-decoration: none;
+    color: grey;
+    margin: 10px 20px;
+}
+
+/* button:hover {
+    opacity: 0.8;
+} */
+
+#signin button:hover{
+    border: 2px solid #1de477;
+    background-color: white;
+    color: #1de477;
+}
+
+.fa {
+    padding: 11px;
+    font-size: 27px;
+    width: 51px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 6px;
+    border-radius: 32px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .cnt {
+        flex-direction: column;
+    }
+
+    .signin,.signup {
+        width: 100%;
+        font-size: 1rem;
+    }
+    button{
+        font-size: 16px;
+    }
+
+}
+
+/* @media only screen and (max-width: 473px) {
+
+    #email,
+    #password {
+        width: 150px;
+    }
+
+    .signin {
+        height: 100%;
+    }
+
+    .head {
+        margin-top: 50px;
+
+    }
+
+    .question {
+        display: inline;
+    }
+
+    .text {
+        display: none;
+    }
+
+} */

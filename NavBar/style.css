@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Fredoka One', cursive;
+  }
+  body{
+      background-color: bisque;
+  }
+  .cnt{
+    height:30px;
+    width: 100%;
+    display:flex;
+    background-color:rgb(5, 5, 5);
+    align-items:center;
+    justify-content:center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* transition: 2s; */
+    height: 40px;
+    
+  }
+  
+  .sub{
+    
+    margin: 8px 30px;
+    padding: 2px 6px;
+    /* border: 2px solid #b5b55f; */
+    width: 60px;
+    text-align: center;
+    color: white;
+  }
+  
+  .sub:hover{
+    color:white;
+    cursor:pointer;
+    border-radius: 5px;
+    background-color: rgb(130, 174, 216);
+    
+
+      
+  }
+  
+
+  #tag{
+    margin: 3px 30px;
+    padding: 2px 6px;
+    /* border: 2px solid #b5b55f; */
+    width: 60px;
+    text-align: center;
+    color: white;
+      position:absolute;
+      left: 10px;
+      font-size: 1.5rem;;
+  }
+
+  .fa{
+    margin: 5px 31px;
+    padding: 7px 2px;
+    /* border: 2px solid #b5b55f; */
+    width: 60px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    border-radius: 24px;
+    position: relative;
+    left: 100px;
+   
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin{
+    background: #007bb5;
+    color: white;
+  }
+  
+  #search{
+    margin: 8px 30px;
+    padding: 2px 6px;
+    /* border: 2px solid #b5b55f; */
+    width: 83px;
+    text-align: center;
+    color:black;
+    position: absolute;
+    right: 10px;
+    border-radius: 13px;
+    height: 20px;
+    border-style: none;
+    border-color: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+  #search { display: none;}
+  .fa{ display: none;
+  }
+
+  .sub{
+    position: relative;
+    left:100px;
+  }
+
+}

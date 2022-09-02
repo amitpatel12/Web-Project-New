@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    /* min-height: 7vh; */
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    border-radius: 12px;
+    margin: 15px auto;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-position: center;
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 23px;
+}
+
+.songItem img {
+    width: 38px;
+    margin: 0 23px;
+    padding: 0px 0;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+
+}
+
+.timestamp i {
+    cursor: pointer;
+    margin: -3px 0;
+}
+
+.songItemContainer {
+    margin-top: 20px;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round',
+        sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}

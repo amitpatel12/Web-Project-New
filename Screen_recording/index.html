@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Screen Recording with client
+        side javascript</title>
+</head>
+
+<body>
+    <h2 class="heading">Welcome to Screen Recoder Page</h2>
+    <div class="screen" style="float: left">
+        <video class="recording" autoplay muted width="500px" height="500px"></video>
+    </div>
+    <div class="show">
+        <h1>OUTPUT</h1>
+        <video class="output" autoplay controls width="500px" height="500px"></video>
+
+        <div class="btn">
+            <button class="start-btn">Start Recording</button>
+            <button class="stop-btn">Stop Recording</button>
+            <button class="downlodrecord"><a href="#" download="output.mp4" class="download-anc">Download</a>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
